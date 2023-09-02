@@ -100,7 +100,6 @@ d3.json(samplesURL).then(function(data) {
     createCharts();
 
     // On change to the DOM, call getData() to set dataset
-    // Not sure why, but currently the listener doesn't work after initializing. 
     dropDownAll.on("change", function() {
         getData(dropDown);
         createCharts();
